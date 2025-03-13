@@ -51,7 +51,7 @@ class TestHeadHunterAPI(unittest.TestCase):
         self.assertEqual(result, 'Ошибка 404')
         mock_get.assert_called_once_with(url=api.get_url(), params=api.params)
 
-    # тетирование инициализации с помощью assert
+    # тестирование инициализации с помощью assert
     def setUp(self):
         """ Метод для настройки тестов, выполняется перед каждым тестом. """
         self.example_class = HeadHunterAPI('Moscow', 1, 0, 'Developer')
